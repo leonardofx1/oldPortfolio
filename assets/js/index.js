@@ -1,6 +1,10 @@
 const contato = document.querySelector('[data-js="contato"]')
 const contatos = document.querySelector('#contato')
-console.log(contato )
+const h1 = document.querySelector('[data-js="digitacao"]')
+const menu = document.querySelector('.cabecalho')
+const btnClose = document.querySelector('[data-js="closeMenu"]')
+const menuMobile = document.querySelector('[data-js="menu"]')
+
  contato.addEventListener('click', e => {
      e.preventDefault()
     const topo =  contatos.offsetTop
@@ -11,10 +15,6 @@ console.log(contato )
     })
      
  })
-
- const menu = document.querySelector('.cabecalho')
-const btnClose = document.querySelector('[data-js="closeMenu"]')
-const menuMobile = document.querySelector('[data-js="menu"]')
 
 const removeAddClass = (el, del, ad) => {
    el.classList.remove(del)
@@ -37,5 +37,22 @@ const handleMenuClick = (e) => {
    classElement == 'menu__ativo' && showMenuMobile()
    console.log(classElement) 
 }
+let i = 0;
+const text = "ola, eu sou o Leonardo Desenvolvedor Front-End";
+const speed = 100;
+
+const writer = () =>  {
+  if (i < text.length) {
+    h1.textContent += text[i];
+    i++;
+    setTimeout(writer, speed);
+  }
+  else {
+   h1.textContent =''
+   i = 0
+   writer()
+  }
+}
+writer()
 
 menu.addEventListener('click',handleMenuClick)
