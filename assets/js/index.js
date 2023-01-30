@@ -38,7 +38,7 @@ const handleMenuClick = (e) => {
    console.log(classElement) 
 }
 let i = 0;
-const text = "ola, eu sou o Leonardo Desenvolvedor Front-End";
+const text = "Ola, eu sou o Leonardo Desenvolvedor Front-End";
 const speed = 100;
 
 const writer = () =>  {
