@@ -14,13 +14,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
 }
-.init__hidden {
-  opacity: 0; 
-  transition: opacity 2s linear ;
-}
-.init__hidden___off {
-  opacity: 1;
-}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
