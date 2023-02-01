@@ -54,4 +54,19 @@ const writer = () =>  {
 }
 writer()
 
+const showAnimation = section =>{
+   const arr = Array.from(section)
+   arr.forEach(el =>  el.intersectionRatio >= 0.6 && el.target.classList.add('init__hidden___off'))}
+
 menu.addEventListener('click',handleMenuClick)
+
+
+
+const obs = new IntersectionObserver(showAnimation
+,{
+   threshold:[0,0.5,1]
+})
+
+ Array.from(document.querySelectorAll('.init__hidden'))
+ .forEach(el =>  obs.observe(el))
+
