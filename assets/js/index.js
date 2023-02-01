@@ -8,7 +8,6 @@ const menuMobile = document.querySelector('[data-js="menu"]')
  contato.addEventListener('click', e => {
      e.preventDefault()
     const topo =  contatos.offsetTop
-    console.log(topo)
     window.scrollTo({
         top:topo,
         behavior:'smooth',
@@ -56,3 +55,20 @@ const writer = () =>  {
 writer()
 
 menu.addEventListener('click',handleMenuClick)
+
+const obs = new IntersectionObserver(section =>{
+ const arr =  [...section]
+
+ arr.forEach(el => {
+  if( el.intersectionRatio >= 1){
+   el.target.classList.add('init__hidden___off')
+   }
+ })
+   
+},{
+   threshold:[0,0.5,1]
+})
+
+ Array.from(document.querySelectorAll('.init__hidden'))
+ .forEach(el =>  obs.observe(el))
+

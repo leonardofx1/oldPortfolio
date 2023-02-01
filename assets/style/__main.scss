@@ -72,4 +72,14 @@
     justify-content: flex-start;
     margin-bottom: 3rem;
   }
+  .section__projetos {
+    justify-content: space-between;
+    flex-direction: column;
+    .project__title {
+      position: relative;
+      margin-bottom: .5rem;
+      font-size: 2rem;
+      display: block;
+    }
+  }
 }
