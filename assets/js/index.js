@@ -56,19 +56,14 @@ writer()
 
 menu.addEventListener('click',handleMenuClick)
 
-const obs = new IntersectionObserver(section =>{
- const arr =  [...section]
+const showSection = section =>{
+   Array.from(section).forEach(el =>  el.intersectionRatio >= 0.5 && el.target.classList.add('init__hidden___off') )
+  };
 
- arr.forEach(el => {
-  if( el.intersectionRatio >= 1){
-   el.target.classList.add('init__hidden___off')
-   }
- })
-   
-},{
+const obs = new IntersectionObserver(showSection,{
    threshold:[0,0.5,1]
 })
 
- Array.from(document.querySelectorAll('.init__hidden'))
+ Array.from(document.querySelectorAll('[data-js="hidden"]'))
  .forEach(el =>  obs.observe(el))
 
