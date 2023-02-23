@@ -164,6 +164,7 @@ h1 {
   .my__foto {
     height: 250px;
     width: 250px;
+    margin-top: 2.2rem;
   }
   .apresentacao {
     min-width: 450px;
