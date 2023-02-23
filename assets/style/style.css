@@ -1,13 +1,15 @@
 .cabecalho__nav {
   width: 100%;
   display: flex;
-  height: 40px;
+  height: 50px;
   align-items: center;
   justify-content: end;
 }
 .cabecalho__nav a li {
   color: white;
-  margin: 0 8px;
+  margin: 0 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .container__qualidades {
@@ -44,8 +46,7 @@
   width: 80px;
   height: 80px;
   position: relative;
-  -webkit-animation: move-up-down 5s ease-in-out infinite;
-          animation: move-up-down 5s ease-in-out infinite;
+  animation: move-up-down 5s ease-in-out infinite;
 }
 
 .menu__ativo {
@@ -92,18 +93,6 @@
   display: none;
 }
 
-@-webkit-keyframes move-up-down {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -25px;
-  }
-  100% {
-    top: 0;
-  }
-}
-
 @keyframes move-up-down {
   0% {
     top: 0;
@@ -138,21 +127,8 @@
   grid-row: 1/1;
   border: 5px solid orangered;
   position: relative;
-  -webkit-animation: move-up-down 5s ease-in-out infinite;
-          animation: move-up-down 5s ease-in-out infinite;
 }
 
-@keyframes move-up-down {
-  0% {
-    top: 0;
-  }
-  50% {
-    top: -25px;
-  }
-  100% {
-    top: 0;
-  }
-}
 .apresentacao {
   color: white;
   grid-column: 2/2;
@@ -160,6 +136,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -170,6 +147,7 @@ h1 {
   font-size: 1.4rem;
   grid-column: 2/2;
   grid-row: 1/1;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 700px) {
@@ -188,7 +166,7 @@ h1 {
     width: 250px;
   }
   .apresentacao {
-    min-width: 300px;
+    min-width: 450px;
     height: auto;
     display: flex;
     justify-content: flex-start;

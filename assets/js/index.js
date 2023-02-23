@@ -1,6 +1,7 @@
 const contato = document.querySelector('[data-js="contato"]')
 const contatos = document.querySelector('#contato')
-const h1 = document.querySelector('[data-js="digitacao"]')
+const h1 = document.querySelector('[data-js="nome"]')
+const h2 = document.querySelector('[data-js="profissao"]')
 const menu = document.querySelector('.cabecalho')
 const btnClose = document.querySelector('[data-js="closeMenu"]')
 const menuMobile = document.querySelector('[data-js="menu"]')
@@ -36,24 +37,30 @@ const handleMenuClick = (e) => {
    classElement == 'menu__ativo' && showMenuMobile()
    console.log(classElement) 
 }
-let i = 0;
-const text = "Ola, eu sou o Leonardo Desenvolvedor Front-End";
-const speed = 100;
-
-const writer = () =>  {
-  if (i < text.length) {
-    h1.textContent += text[i];
-    i++;
-    setTimeout(writer, speed);
-  }
-  else {
-   h1.textContent =''
-   i = 0
-   writer()
-  }
-}
-writer()
-
+const  typeWriter = (text, elem, callback) => {
+   let i = 0;
+   const speed = 50;
+   const type = () => {
+     if (i < text.length) {
+       elem.innerHTML += text.charAt(i);
+       i++;
+       setTimeout(type, speed);
+     } else {
+       if (callback) {
+         callback();
+       }
+     }
+   };
+   type();
+ }
+ 
+ const firstElem = document.getElementById("first-element");
+ const secondElem = document.getElementById("second-element");
+ 
+ typeWriter("Ola, eu sou o Leonardo.", h1, () => {
+   typeWriter("Desenvolvedor Front End.", h2);
+ });
+ 
 const showAnimation = section =>{
    const arr = Array.from(section)
    arr.forEach(el =>  el.intersectionRatio >= 0.6 && el.target.classList.add('init__hidden___off'))}
