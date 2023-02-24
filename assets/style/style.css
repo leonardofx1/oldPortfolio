@@ -118,6 +118,22 @@
   grid-template-rows: 50%;
   height: 100vh;
 }
+.container__principal .container__principal___curriculo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__principal .container__principal___curriculo .curriculo {
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  background-color: orangered;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.container__principal .container__principal___curriculo .curriculo:hover {
+  box-shadow: 0.3px 0.3px 15px orangered;
+}
 
 .my__foto {
   width: 300px;
