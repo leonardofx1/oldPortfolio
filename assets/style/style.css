@@ -116,6 +116,7 @@
   width: 100vw;
   height: 100vh;
   max-height: auto;
+  margin-bottom: 1rem;
 }
 .container__principal .container__principal___foto {
   display: flex;
