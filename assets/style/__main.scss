@@ -6,21 +6,29 @@
 }
 .container__principal {
     width: 100vw;
-    display: grid;
-    grid-template-columns: 301px 1fr;
-    grid-template-rows: 50% ;
     height: 100vh;
-    .container__principal___curriculo {
+    max-height: auto;
+    .container__principal___foto {
       display: flex;
-      flex-direction: column;
+      width: 940px;
+      min-width: auto;
+      margin: 0 auto;
+      max-height: auto;
+     padding: 2rem;
+     
+      flex-wrap: wrap;
+      flex-direction: row;
       align-items: center;
+      justify-content: space-between;
      .curriculo {
       padding: .8rem;
-      margin-top: .4rem;
+      margin-top: 1.5rem;
       background-color:  orangered;
       color: white;
       font-weight: bold;
       border-radius: 5px;
+      text-align: center;
+      width: 200px;
       &:hover {
         box-shadow: .3px .3px 15px orangered;
       }
