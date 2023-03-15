@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Meu Portfólio</title>
-  
-  </head>
-  <body>
+
+</head>
+
+<body>
     <img src="assets/images/banner.png" alt="banner" class="banner">
     <header id="home">
-        <nav class="cabecalho"> 
-            <img src="assets/images/1486395863-menu2_80615.png"  class="menu__ativo" alt="menu">
-           
+        <nav class="cabecalho">
+            <img src="assets/images/1486395863-menu2_80615.png" class="menu__ativo" alt="menu">
+
             <ul data-js="menu" class="cabecalho__nav">
                 <img src="assets/images/icon-menu-close.svg" data-js="closeMenu" class="d-none" alt="">
                 <a href="#home">
@@ -21,75 +23,83 @@
                 <a href="#sobre">
                     <li>Sobre</li>
                 </a>
-                <a   data-js="contato" href="#contato">
+                <a data-js="contato" href="#contato">
                     <li>Contato</li>
                 </a>
             </ul>
         </nav>
     </header>
     <main class="container__principal">
-    <div class="container__principal___foto">
-        <img class="my__foto" src="assets/images/my foto.jpeg" alt="foto-do-desenvolvedor">
-       
-    <div class="apresentacao">
-        <h1 data-js="nome"> </h1>
-        <h2 data-js="profissao"></h2>
-        <a class="curriculo" href="assets/curriculo/currículo-Leonardo.pdf" target="_blank" download="">Baixar Currículo</a>
-    </div>
-    </div>
-</main>
-<section class="container__qualidades init__hidden">
-    <div> 
-        <h3 class="title__skills">Hard skills</h3>
-        <img class="img__skill" src="assets/images/sass (1).svg" alt="">
-        <img class="img__skill" src="assets/images/html5.png" alt="">
-        <img class="img__skill" src="assets/images/css3.png" alt="">
-        <img class="img__skill" src="assets/images/js.png" alt=""></div>
-    <div class="container__Skils" id="sobre">
-        <ul class="hard__skils">
-            <h3 class="title__skills">Soft skils</h3>
-            <li>Focado</li>
-            <li>Criativo</li>
-            <li>Comunicativo</li>
-            <li>Resiliente</li>
-            <li>Trabalho em Equipe</li>
-        </ul>
-    </div>
-</section>
-<section class="section__projetos">
-      <h3 class="project__title">Projetos</h3>
-        <a href="https://rest-coutry-fx.netlify.app/" target="_blank" class="project  init__hidden">
-          <img class="img__projeto" src="assets/images/capa-bandeiras.png" alt="image do preojeto Bandeiras">
-          <h3 class="projeto__title">Bandeiras</h3>
-          <p class="projeto__desc"> Projeto de requisição API para obter informações sobre diferentes países.</p>
-        <a href="https://calculadorajsfx.netlify.app" target="_blank" class="project init__hidden">
-          <img class="img__projeto" src="assets/images/calculadora.png" alt="Projeto 2">
-          <h3 class="projeto__title">Calculadora</h3>
-          <p class="projeto__desc">Calculadora feita com javascript principais funcionalidades: soma, subtração, divisão, multiplicação </p>
-        </a>
-        <a href="https://conselhosfx.netlify.app/" target="_blank" class="project init__hidden">
-          <img class="img__projeto" src="assets/images/conselhos.png" alt="Projeto 3">
-          <h3 class="projeto__title">Conselhos</h3>
-          <p class="projeto__desc">Projeto de requisição API que gerar novos conselhos a cada click no dado </p>
-        </a>
-</section>
+        <div class="container__principal___foto">
+            <img class="my__foto" src="assets/images/my foto.jpeg" alt="foto-do-desenvolvedor">
+
+            <div class="apresentacao">
+                <h1 data-js="nome"> </h1>
+                <h2 data-js="profissao" class="profissao__efeito"></h2>
+                <a class="curriculo" href="assets/curriculo/currículo-Leonardo.pdf" target="_blank" download="">Baixar
+                    Currículo</a>
+            </div>
+        </div>
+    </main>
+    <section class="container__qualidades init__hidden">
+        <div>
+            <h3 class="title__skills">Hard skills</h3>
+            <img class="img__skill" src="assets/images/sass (1).svg" alt="image-sass">
+            <img class="img__skill" src="assets/images/html5.png" alt="image-html5">
+            <img class="img__skill" src="assets/images/css3.png" alt="image-css3">
+            <img class="img__skill" src="assets/images/js.png" alt="image-javascript">
+        </div>
+        <div class="container__Skils" id="sobre">
+            <ul class="hard__skils">
+                <h3 class="title__skills">Soft skils</h3>
+                <li>Focado</li>
+                <li>Criativo</li>
+                <li>Comunicativo</li>
+                <li>Resiliente</li>
+                <li>Trabalho em Equipe</li>
+            </ul>
+        </div>
+    </section>
+    <section class="section__projetos">
+        <h3 class="project__title">Projetos</h3>
+        <div class="section__projetos__Container">
+            <a href="https://rest-coutry-fx.netlify.app/" target="_blank" class="project  init__hidden">
+                <img class="img__projeto" src="assets/images/capa-bandeiras.png" alt="image do preojeto Bandeiras">
+                <h3 class="projeto__title">Bandeiras</h3>
+                <p class="projeto__desc"> Projeto de requisição API para obter informações sobre diferentes países.</p>
+                <a href="https://calculadorajsfx.netlify.app" target="_blank" class="project init__hidden">
+                    <img class="img__projeto" src="assets/images/calculadora.png" alt="Projeto 2">
+                    <h3 class="projeto__title">Calculadora</h3>
+                    <p class="projeto__desc">Calculadora feita com javascript principais funcionalidades: soma,
+                        subtração, divisão, multiplicação </p>
+                </a>
+                <a href="https://conselhosfx.netlify.app/" target="_blank" class="project init__hidden">
+                    <img class="img__projeto" src="assets/images/conselhos.png" alt="Projeto 3">
+                    <h3 class="projeto__title">Conselhos</h3>
+                    <p class="projeto__desc">Projeto de requisição API que gerar novos conselhos a cada click no dado
+                    </p>
+                </a>
+        </div>
+    </section>
     <footer class="init__hidden">
         <h3 id="contato">Contato</h3>
         <nav>
             <ul>
                 <a href="https://github.com/leonardofx1" target="_blank">
-                    <li><img src="assets/images/git.png" alt="" class="rede__social"></li></a>
+                    <li><img src="assets/images/git.png" alt="" class="rede__social"></li>
+                </a>
                 <a href="https://www.linkedin.com/in/leonardo-nunes-freitas-798ba1239/" target="__blank">
-                        <li><img src="assets/images/linkedIn.png" alt="" class="rede__social"></li>
+                    <li><img src="assets/images/linkedIn.png" alt="" class="rede__social"></li>
                 </a>
-                 <a href="tel:074999532122">
-                        <li class="num">074999532122</li>
+                <a href="tel:074999532122">
+                    <li class="num">074999532122</li>
                 </a>
-           
+
             </ul>
             &copy; Leonardo Nunes Freitas
         </nav>
     </footer>
     <script src="assets/js/index.js"></script>
-  </body>
+</body>
+
 </html>
