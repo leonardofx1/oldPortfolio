@@ -16,30 +16,40 @@
 .project {
     max-width: 400px;
     display: flex;
-    height: auto;
+    height: 350px;
     flex-direction: column;
     margin: 5px;
     border-radius: 5px;
     background-color: white;
     overflow: hidden;
-    transition: all .5s ease-in-out;
+    transition: ease-in-out;
     padding: .2rem;
     cursor: pointer;
-    &:hover {
-        transform: scale(1.1);
-        margin: 25px;
-
-    }
+    
+}
+.project:hover {
+    transform: scale(1.1);
+    margin: 25px;
 }
 .img__projeto {
     width: 100%;
-    height: 200px;
+    min-height: 200px;
+}
+
+.projeto__title{
+    text-transform: uppercase;
+    color: black;
 }
 
 .projeto__title, .projeto__desc{
     font-weight: bold;
-    font-size: 1.5rem;
-    margin: 15px 0 ;
+    font-size: 1.2rem;
+    margin: 4px 0 ;
+    padding: .8rem;
     text-align: start;
+}
+
+.projeto__desc {
+    color:rgba(0, 0, 0, 0.712);
 }
 
